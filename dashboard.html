@@ -1,0 +1,560 @@
+<html>
+
+<head>
+    <title>Hotel managment</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="./css/home.css" rel="stylesheet">
+    <link src="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <div class="sidebar" id="sidebar">
+        
+        <ul class="list">
+            <a class="active" href="#dashlite"> <i class="fa fa-th-list" style=" color: white; margin-right: 5px;"></i>
+                dashlite</a>
+
+            <a href="#Dashboard"><i class="fa fa-th" aria-hidden="true"
+                    style="font-size: 24px;      margin-right:5px; color:white ;"></i> Dashboard</a>
+            <div class="dropdown">
+                <span> <a href="Booking"><i class="fa fa-calendar" aria-hidden="true"
+                            style="font-size:24px ; color:white;margin-right:5px;"></i> Booking <i class="material-icons" aria-hidden="true"
+                            style="font-size:24px ; color:white; float: right; margin-top: 5px;">keyboard_arrow_right</i> </a></span>
+                <div class="dropdown-content">
+                    <a href="allbooking.html">All Booking</a>
+                    <a href="addbooking.html">Add Booking</a>
+                    <a href="editbooking.html">Edit Booking</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <span><a href="#Room"><i class="fa fa-file" aria-hidden="true"
+                            style="color:white ;font-size: 24px; margin-right: 9px;"></i>Room</a></span>
+                <div class="dropdown-content">
+                    <a href="allrooms.html">All Rooms</a>
+                    <a href="roomtypes.html">Room Types</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <span><a href="#Report"><i class="fa fa-file" aria-hidden="true"
+                            style="color:white ; margin-right: 9px; font-size: 24px;"></i>report</a></span>
+                <div class="dropdown-content">
+                    <a href="stocks.html">Stocks</a>
+                    <a href="expenses.html">Expenses</a>
+                    <a href="booking.html">Booking</a>
+                </div>
+            </div>
+
+
+
+
+
+            <a href="customer.html"> <i class="fa fa-user" aria-hidden="true "
+                    style="color:white ; font-size: 24px;margin-right:9px ;"></i>Customer</a>
+            <div class="dropdown">
+
+
+
+                <a href="#Support"><i class="fa fa-comment" style='font-size:24px;color:white ;'></i> support</a>
+
+                <div class="dropdown">
+                    <span><a href="#Payment"> <i class="fa fa-dollar" aria-hidden="true" ari
+                                style="font-size:24px ; color:white;margin-right: 9px;"></i>Payment</a></span>
+                    <div class="dropdown-content">
+                        <a href="Paymentmethod.html">Payment Methods</a>
+                        <a href="#">Invoice List</a>
+                        <a href="#">Invoice Details</a>
+                    </div>
+                </div>
+
+                <a href="#Setting"> <i class="fa fa-cog" aria-hidden="true"
+                        style="font-size:24px ; color:white;margin-right: 9px;"></i>Setting</a>
+                <div>
+                    <p>Reture to</p>
+                    <a href="#Main Dashboard"> <i class="fa fa-th-list"
+                            style=" color: white; margin-right: 9px;"></i>Main Dashboard</a>
+
+                    <a href="#All component"><i class="fas fa-layer-group" aria-hidden="true"
+                            style='font-size:24px'></i>All component</a>
+                </div>
+
+            </div>
+        </ul>
+    </div>
+
+    <div class="content">
+        <div class="content-header">
+            <div class="first_div">
+                <h6 style="font-size:50px ; font-weight: 50px;">Dashboard Overview</h6>
+                <p>Welcome to DashLite Dashboard Template.</p>
+            </div>
+            <div class="second_div">
+
+                <button type="button" class="btn btn-outline-secondary"><i class="fa fa-calendar" aria-hidden="true"
+                        style=" margin-right: 5px;"></i>last 30days</button>
+                <button type="button" class="btn btn-primary"><i class="fa fa-file" aria-hidden="true"
+                        style="margin-right:5px ;"></i>Reports</button>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-header">
+                        <p> Total Booking <i class="fa fa-question-circle" aria-hidden="true"
+                                style="font-size:14px ; font-weight:5px ; color: darkgrey; margin-left:150px ;"></i>
+                    </div>
+                    <div class="card-body">11,230
+                        1.93%</div>
+                    <div class="card-footer">THIS MONTH
+                        1913 <p>THIS WEEK
+                            1125 </p> <img src="images/graph.png (2).png" alt="graps"
+                            style="width: 40px ; height: 40px; margin-left: 10px; margin-bottom:5px ;"></div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-header">
+                        <p> Rooms Available <i class="fa fa-question-circle" aria-hidden="true"
+                                style="font-size:14px ;font-weight:5px ; color: darkgray; margin-left: 130px;"></i></p>
+                    </div>
+                    <div class="card-body">312
+                    </div>
+                    <div class="card-footer">
+                        <p> BOOKED (MONTH) 913</p>
+                        <p> BOOKED (WEEK)125 </p> <img src="images/graph3 (2).png" alt="graphs"
+                            style="width: 40px ; height: 40px; margin-left: 10px; margin-bottom:5px ;">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-header"> Expenses <i class="fa fa-question-circle" aria-hidden="true"
+                            style="font-size: 14px; font-weight:5px ; color: darkgrey; margin-left:170px ;"></i> </div>
+                    <div class="card-body">79,358.50 USD</div>
+                    <div class="card-footer">
+                        <p> THIS MONTH
+                            3,540.59 USD </p>
+                        <p> THIS WEEK
+                            1,259.28 USD </p> <img src="images/graph4 (2).png" alt="graph"
+                            style="width: 50px ; height: 50px; margin-left: 10px; margin-bottom:5px ;">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="card" style="margin-top:30px ; ">
+            <div class="card-body">
+                <div class="content-header2">
+                    <div class="first_div 2">
+                        <h6 style="font-size:20px ; font-weight: 30px;">Top Selected Package</h6>
+                        <p style="font-size:15px; color: darkgrey;">In last 30 days top selected package.</p>
+                    </div>
+                    <div class="second-div2">
+
+
+                        <button type="button" class="btn btn-outline-secondary">last 30days</button>
+
+
+                    </div>
+                </div>
+
+                <div>
+                    <p style="margin: 0%;">Strater Package <span style="float: right;">58%</span></p>
+                    <div class="progress" style="height:10px">
+                        <div class="progress-bar" style="width:65%;height:7px"></div>
+                    </div>
+                </div>
+
+                <div class="mt-3">
+                    <div>
+                        <p style="margin: 0%; ">Honeymoon Package <span style="float: right;">43%</span></p>
+
+                        <div class="progress" style="height:7px">
+                            <div class="progress-bar bg-warning" style="width:50%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <p style="margin: 0%; ">Vacation Package</p> <span style="float: right;">33%</span></p>
+
+                    <div class="progress" style="height:7px">
+                        <div class="progress-bar bg-danger" style="width:25%"></div>
+                    </div>
+                </div>
+                <div>
+                    <p style="margin: 0%; ">Continental Package</p> <span style="float: right;">29%</span></p>
+
+                    <div class="progress" style="height:7px">
+                        <div class="progress-bar" style="width:20%"></div>
+                    </div>
+                </div>
+                <div>
+                    <p style="margin: 0%; ">Spring Package</p> <span style="float: right;">18.49%</span></p>
+
+                    <div class="progress" style="height:7px">
+                        <div class="progress-bar bg-danger" style="width:19%"></div>
+                    </div>
+                </div>
+
+                <div>
+                    <p style="margin: 0%; ">Spring Package</p> <span style="float: right;">16%</span></p>
+
+                    <div class="progress" style="height:7px">
+                        <div class="progress-bar bg-success" style="width:17%"></div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+        <div style="margin-top: 20px;">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-header2">
+                            <div class="first_div">
+                                <h6 style="font-size:20px ; font-weight: 30px; margin-left:20px">Sales Revenue</h6>
+                                <p style="color: darkgrey; font-size:13px  ; margin-top: -5px;">In last 30 days revenue
+                                    from rent.</p>
+                            </div>
+                            <div class="second_div">
+                                <p><i class="fa fa-question-circle" aria-hidden="true"
+                                        style="font-size:14px ;font-weight:5px ; color: darkgray; margin-left: 130px;"></i>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-body" style="display:flex ; justify-content: space-evenly;">
+                            <p>Monthly<br>
+                                9.28K <br>
+                                4.63%</p>
+                            <p>Weekly <br>
+                                2.69K <br>
+                                1.92%</p>
+                            <p>Daily (Avg) <br>
+                                0.94K <br>
+                                3.45%</p>
+                        </div>
+                        <div class="card-footer"> <img src="images/big graph.png" alt="graph"
+                                style="width: 100%; height: 100%;"></div>
+                        <div class="content3">
+                            <div class="third_div">
+                                <p>01 Jan, 2020 </p>
+                            </div>
+                            <div class="fourth_div">
+                                <p>30 Jan, 2020</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+
+                    <div class="card boxs">
+                        <div class="card-header3">
+                            <div class="first_div">
+                                <h6 style="font-size:20px ; font-weight: 30px;">Room Booking Chart</h6>
+
+                            </div>
+                            <div class="second-div2">
+
+
+                                <button type="button" class="btn btn-outline-secondary">last 30days</button>
+
+
+                            </div>
+                        </div>
+                        <div class="card-body"><img src="images/single.png" alt="circle"
+                                style="width:120% ; height:120% ; text-align: center;"></div>
+                        <div class="card-footer">
+                            <div class="firstFooter">
+                                <div class="first_div">
+                                    <p> <img src="images/unchecked.png" alt="box"
+                                            style="height:15px ; width: 15px; background-color:darkgrey ;"> Single <br>
+                                        1913 58.63%</p>
+
+                                </div>
+                                <div class="second_div">
+                                    <p><img src="images/unchecked.png" alt="box"
+                                            style="height:15px ; width: 15px; background-color:mediumspringgreen ;">Double
+                                        <br> 859 23.94%
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="secondFooter">
+                                <div class="first_div">
+                                    <p><img src="images/unchecked.png" alt="box"
+                                            style="height:15px ; width: 15px; background-color:rgb(187, 187, 22);">Delux
+                                        <br> 1913 58.63%
+                                    </p>
+
+                                </div>
+                                <div class="second_div">
+                                    <p> <img src="images/unchecked.png" alt="box"
+                                            style="height:15px ; width: 15px; background-color:orangered;">Suit <br> 859
+                                        23.94% </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-3">
+
+            <div class="card">
+                <div class="card-header4">
+                    <div class="first_div">
+                        <h6 style="font-size:20px ; font-weight: 30px; margin-left:20px">Income vs Expenses</h6>
+                        <p style="color: darkgrey; font-size:13px  ; margin-top: -5px;">How was your income and Expenses
+                            this month.</p>
+                    </div>
+                    <div class="second_div"> <button type="button" class="btn btn-outline-secondary">7D/1M/3M</button>
+
+
+                    </div>
+
+                </div>
+                <div class="card-body2">
+                    <div first_div>
+                        Income <br> 2.57K <br> 12.37%
+                    </div>
+                    <div style="margin-right: 605px;">Expenses <br>
+                        3.5K <br>
+                        8.37% <br>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <img src="images/big graph2.png" alt="graph" style="width:200% ; height: 200%;">
+                </div>
+
+                <div class="card-footer4">
+                    <div class="first_div">01 Jan, 2020</div>
+                    <div class="second_div">15 Jan, 2020</div>
+                    <div class="third_div">30 Jan, 2020</div>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card" style="margin-top:20px;">
+                        <div style="display: flex; justify-content: space-between; padding: 10px;">
+                            <h5>New Customer</h5>
+                            <h6>View All</h6>
+                        </div>
+                        <div class="line" style="width: 100%; height: 1px;background-color: #c1c1c1;">
+                        </div>
+                        <div class="" style="padding: 10px; display: flex; justify-content: space-between;">
+
+                            <div style="display: flex; ">
+                                <div
+                                    style="width: 50px;height: 50px; border-radius: 50%; background-color: #798bff;color: #6576ff; display: grid; place-items: center;">
+                                    AB
+                                </div>
+                                <div style=" margin-left: 20px; margin-top: 5px;">
+                                    <h6 style="font-weight: bold;">Abu Bin Ishtiyak</h6>
+                                    <p style="margin-top: -10px;">info@softnio.com</p>
+                                </div>
+                            </div>
+                            <div><i class="fa fa-ellipsis-h"
+                                    style="font-size:24px; margin-top: 10px; cursor: pointer;"></i></div>
+
+                        </div>
+                        <div class="line" style="width: 100%; height: 1px;background-color: #c1c1c1;">
+                        </div>
+                        <div class="" style="padding: 10px; display: flex; justify-content: space-between;">
+
+                            <div style="display: flex; ">
+                                <div
+                                    style="width: 50px;height: 50px; border-radius: 50%; background-color: #bc86a5;color: #ff65b2; display: grid; place-items: center;">
+                                    SW
+                                </div>
+                                <div style=" margin-left: 20px; margin-top: 5px;">
+                                    <h6 style="font-weight: bold;">Sharon Walker</h6>
+                                    <p style="margin-top: -10px;">sharon-90@example.com</p>
+                                </div>
+                            </div>
+                            <div >
+                                
+                              <i class="fa fa-ellipsis-h"
+                                    style="font-size:24px; margin-top: 10px; cursor: pointer;"></i></div>
+
+
+                        </div>
+                        <div class="line" style="width: 100%; height: 1px;background-color: #c1c1c1;">
+                        </div>
+                        <div class="" style="padding: 10px; display: flex; justify-content: space-between;">
+
+                            <div style="display: flex; ">
+                                <div
+                                    style="width: 50px;height: 50px; border-radius: 50%; background-color: #ad8363;color: #f97f14; display: grid; place-items: center;">
+                                    GO
+                                </div>
+                                <div style=" margin-left: 20px; margin-top: 5px;">
+                                    <h6 style="font-weight: bold;">Gloria Oliver</h6>
+                                    <p style="margin-top: -10px;">gloria_72@example.com</p>
+                                </div>
+                            </div>
+                            <div><i class="fa fa-ellipsis-h"
+                                    style="font-size:24px; margin-top: 10px; cursor: pointer;"></i></div>
+
+
+                        </div>
+                        <div class="line" style="width: 100%; height: 1px;background-color: #c1c1c1;">
+                        </div>
+                        <div class="" style="padding: 10px; display: flex; justify-content: space-between;">
+
+                            <div style="display: flex; ">
+                                <div
+                                    style="width: 50px;height: 50px; border-radius: 50%; background-color: #adbaad;color: #0dd417; display: grid; place-items: center;">
+                                    PS
+                                </div>
+                                <div style=" margin-left: 20px; margin-top: 5px;">
+                                    <h6 style="font-weight: bold;">Phillip Sullivan</h6>
+                                    <p style="margin-top: -10px;">phillip-85@example.com</p>
+                                </div>
+                            </div>
+                            <div><i class="fa fa-ellipsis-h"
+                                    style="font-size:24px; margin-top: 10px; cursor: pointer;"></i></div>
+
+
+                        </div>
+                        <div class="line" style="width: 100%; height: 1px;background-color: #c1c1c1;">
+                        </div>
+                        <div class="" style="padding: 10px; display: flex; justify-content: space-between;">
+
+                            <div style="display: flex; ">
+                                <div
+                                    style="width: 50px;height: 50px; border-radius: 50%; background-color: #d4cbc4;color: #f97f14; display: grid; place-items: center;">
+                                    TI
+                                </div>
+                                <div style=" margin-left: 20px; margin-top: 5px;">
+                                    <h6 style="font-weight: bold;">Tasnim Ifrat</h6>
+                                    <p style="margin-top: -10px;">gloria_72@example.com</p>
+                                </div>
+                            </div>
+                            <div><i class="fa fa-ellipsis-h"
+                                    style="font-size:24px; margin-top: 10px; cursor: pointer;"></i></div>
+
+
+                        </div>
+                        <div class="line" style="width: 100%; height: 1px;background-color: #c1c1c1;">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card" style="margin-top:20px;">
+                        <div style="display: flex; justify-content: space-between; padding: 10px;">
+                            <h5>Recent Activities</h5>
+                            <div style="display:flex ; justify-content: space-between;">
+                                <h6 style="margin-right: 10px;"><a href="url">Cancel</a></h6>
+                                <h6><a href="url">All</a></h6>
+                            </div>
+                        </div>
+                        <div class="line" style="width: 100%; height: 1px;background-color: #c1c1c1;">
+                        </div>
+                        <div style="display: flex; padding: 10px;">
+                            <div><img src="images/person1.jpg" alt="lady"
+                                    style="width:50px ;height: 50px; margin-top: 10px; cursor: pointer; border-radius:50%;">
+                            </div>
+                            <div style=" margin-left: 20px; margin-top: 5px;">
+                                <h6>Keith Jensen requested for room.</h6>
+                                <p style="margin-top: -10px;">2 hours ago</p>
+                            </div>
+                        </div>
+
+
+                        <div class="line" style="width: 100%; height: 1px;background-color: #c1c1c1;">
+                        </div>
+                        <div style="display: flex; padding: 10px;">
+                            <div
+                                style="width: 50px;height: 50px; border-radius: 50%; background-color: #d4cbc4;color: #f97f14; display: grid; place-items: center;">
+                                HS
+                            </div>
+                            <div style=" margin-left: 20px; margin-top: 5px;">
+                                <h6>Harry Simpson placed a Order.</h6>
+                                <p style="margin-top: -10px;">2 hours ago</p>
+                            </div>
+                        </div>
+
+
+
+                        <div class="line" style="width: 100%; height: 1px;background-color: #c1c1c1;">
+                        </div>
+                        <div style="display: flex; padding: 10px;">
+                            <div
+                                style="width: 50px;height: 50px; border-radius: 50%; background-color: #8994dc;color: #e7e6eb; display: grid; place-items: center;">
+                                Sm
+                            </div>
+                            <div style=" margin-left: 20px; margin-top: 5px;">
+                                <h6>Stephanie Marshall cancelled booking.</h6>
+                                <p style="margin-top: -10px;">2 hours ago</p>
+                            </div>
+                        </div>
+
+
+
+                        <div class="line" style="width: 100%; height: 1px;background-color: #c1c1c1;">
+                        </div>
+                        <div style="display: flex; padding: 10px;">
+                            <div><img src="images/person2.jpg" alt="lady"
+                                    style="width:50px ;height: 50px; margin-top: 10px; cursor: pointer; border-radius:50%;">
+                            </div>
+                            <div style=" margin-left: 20px; margin-top: 5px;">
+                                <h6>Keith Jensen requested for room.</h6>
+                                <p style="margin-top: -10px;">2 hours ago</p>
+                            </div>
+                        </div>
+
+
+                        <div class="line" style="width: 100%; height: 1px;background-color: #c1c1c1;">
+                        </div>
+                        <div style="display: flex; padding: 10px;">
+                            <div
+                                style="width: 50px;height: 50px; border-radius: 50%; background-color: #da44ad;color: #e7e6eb; display: grid; place-items: center;">
+                                TM
+                            </div>
+                            <div style=" margin-left: 20px; margin-top: 5px;">
+                                <h6>Timothy Moreno placed a Order.</h6>
+                                <p style="margin-top: -10px;">2 hours ago</p>
+                            </div>
+                        </div>
+
+
+
+                        <div class="line" style="width: 100%; height: 1px;background-color: #c1c1c1;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js">
+$(document).ready(function() {
+    $('#sidebar').load('sidebar.html');
+});
+
+    </script>
+     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+   
+<script type="text/javascript">
+
+</script>
+</body>
+
+</html>
